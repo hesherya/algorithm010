@@ -21,6 +21,7 @@ java.lang.Object
 扩展了 AbstractQueue 并实现了 Queue 接口，基于 priority heap 实现。内部方法并非同步，并发情况下应该使用 `ConcurrentBlockingQueue `。
 
 主要方法：
+
 	* PriorityQueue(int initialCapacity, Comparator<? super E> comparator): 构造方法可以初始化初始队列容量及比较器。
 	* boolean add(E e)：直接调用了 offer(e)。
 	* boolean offer(E e)
